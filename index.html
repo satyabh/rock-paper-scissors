@@ -9,6 +9,18 @@
     <title>Rock Paper Scissors!</title>
 </head>
 <body>
-    
+    <h1>Rock Paper Scissors - First to 5</h1>
+    <div class="roundDisplay">Round <span id="roundNumber">0</span></div>
+    <div class="scores">
+        <div>Player : <span id="playerscore">0</span></div> <div>CPU : <span id="cpuscore">0</span></div>
+    </div>
+    <form id="playerInputs">
+        <button type="button" id="r" onclick="game('rock')">Rock</button>
+        <button type="button" id="p" onclick="game('paper')">Paper</button>
+        <button type="button" id="s" onclick="game('scissor')">Scissor</button>
+    </form>
+    <div id="results"></div>
+    <div id="game-status"></div>
+    <button type="button" id="resetButton" onclick="reset()" style="visibility:hidden;">Play Again</button>
 </body>
 </html>
