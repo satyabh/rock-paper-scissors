@@ -51,7 +51,7 @@ function displayResults(result, cpu) {
     document.getElementById("playerscore").innerHTML = playerScore;
     document.getElementById("cpuscore").innerHTML = cpuScore;
     if (playerScore == 5) {
-        document.getElementById("game-status").innerHTML = 'You win the game!!';
+        document.getElementById("game-status").innerHTML = 'You won the game!!';
         document.getElementById("resetButton").style.visibility = "visible";
     }
     if (cpuScore == 5) {
